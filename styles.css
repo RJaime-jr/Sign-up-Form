@@ -1,47 +1,106 @@
+html{
+    background-color: black;
+    font-family: Nunito, sans-serif;
+}
+
 .container{
     
 display: flex;
 flex-direction: row;
-height: 800px;
+justify-content: center;
+height: 900px;
 min-width: 600px;
+background-color: black;
 }
-.img{
-    height: 100%;
-    width: 30%;
+
+.logo{
+    
+    height: 150px;
+    width: 150px;
+    transform: scaleX(-1);
+}
+.logo-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(44, 39, 39, 0.397);
 }
 
 .box-1{
+    background-image: url('https://images.unsplash.com/photo-1615033763013-eade12ef8de3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 40px;
+    
+   
+
+}
+
+.box-2{
     height:100%;
-    width: 70%;
+    width: 54%;
     
     display: flex;
     flex-direction: column;
     
-   align-content: space-between; 
+   align-content: space-evenly; 
    
     background-color: blue;
 
 }
-.box-2{
+.box-a{
+    background-color: green;
+    height: 30%;
+
+}
+.box-b{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    justify-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    height: 40%;
    
     
     
 }
-
+.box-c{
+    background-color: blueviolet;
+    height: 30%;
+    
+}
 label{
     display: block;
+    font-size: 18px;
+}
+input{
+    border-color: #cec5c5;
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+}
+input:focus{
+    border-color: rgb(4, 174, 253);
+
 }
 
 fieldset{
+    
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    /*
     justify-content: space-around;
+    
     align-items: center;
     justify-items: center;
+    */
     border: none;
 }

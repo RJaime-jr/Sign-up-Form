@@ -2,6 +2,10 @@
 <html>
 <head>
     <link rel ="stylesheet" href="styles.css" src>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -9,14 +13,21 @@
 <div class="container">
     <!--Picture and logo-->
     
-        <img class="img" src="./images/taiki-ishikawa-daQvZ_XZTbo-unsplash.jpg"/>
+    <div class="box-1"> 
+        <div class="logo-box">
 
-    
+
+        
+<img class="logo" src="images/wave.png" />
+<h3>Wavy</h3>
+</div>
+    </div>
 
     <!--Sign Up part-->
-    <div class="box-1">
-        <form> 
+   
+        <form class="box-2"> 
     <!-- Description of product-->
+    <div class="box-a">
 <div>
     <p>This is not a real online service! You know you need something like this
 in your life to help you realize your deepest dreams. Sign up now to get started.
@@ -24,26 +35,36 @@ in your life to help you realize your deepest dreams. Sign up now to get started
     <h3>You know you want to.</h3>
 </div>
 
-    <!-- Pre word-->
-    <h2>Let's do this!</h2>
+   
+</div>
+    <div class="box-b">
+ <!-- Pre word
+ <h2>Let's do this!</h2>
+ -->
 
-    <div class="box-2">
     <!-- First-Last Name-->
-    <div>
+   
         <fieldset>
+            <div>
             <label for="first_name">*First Name</label>
             <input type="text" id="first_name" name="first_name" required>
-
+</div>
+<div>
             <label for="last_name">*Last Name</label>
             <input type="text" name="last_name" id="last_name" required>
+        </div>
         </fieldset>
-    </div>
+   
 
 
-    <!--Email-->
+  
+    <!--Email & Phone Number-->
+    <fieldset>
     <div>
+        
         <label for="email">*Email</label>
         <input type"email" name="email" id="email" required>
+       
     </div>
 
     <!--Phone Number-->
@@ -51,22 +72,28 @@ in your life to help you realize your deepest dreams. Sign up now to get started
         <label for="tel">Phone Number</label>
         <input type="tel" name="tel" id="tel">
     </div>
-
+</fieldset>
     <!-- Passwords-->
     <fieldset>
+        <div>
         <label for="password">*Password</label>
         <input type="password" id="password" name="password" required>
-
+</div>
+<div>
         <label for="confirm_password">Confirm Password</label>
         <input type="password" name="confirm_password" id="confirm_password" required>
+        </div>
     </fieldset>
 
 </div>
+
+<div class="box-c">
     <!-- Submit-->
 <button type="submit">Submit</button>
     <!-- Login-->
     <span>Already have an account? <a>Log in</a></span>
 </form>
+
 </div>
 </div>
 </body>
