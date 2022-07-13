@@ -1,6 +1,7 @@
 html{
     background-color: black;
     font-family: Nunito, sans-serif;
+   
 }
 
 .container{
@@ -22,8 +23,8 @@ background-color: black;
 .logo-box{
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    background-color: rgba(44, 39, 39, 0.397);
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.397);
 }
 
 .box-1{
@@ -46,35 +47,42 @@ background-color: black;
 .box-2{
     height:100%;
     width: 54%;
-    
+    background-color: #feffd3;
     display: flex;
     flex-direction: column;
     
    align-content: space-evenly; 
    
-    background-color: blue;
+ 
 
 }
 .box-a{
-    background-color: green;
+    
     height: 30%;
-
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .box-b{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: whitesmoke;
-    height: 40%;
-   
-    
-    
+    background-color: #f1f1c6;
+    box-shadow: 3px 8px 7px #0c0c0ca1;  
 }
+
 .box-c{
-    background-color: blueviolet;
+   
     height: 30%;
-    
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
 }
+
 label{
     display: block;
     font-size: 18px;
@@ -85,9 +93,15 @@ input{
     height: 20px;
     border-radius: 5px;
 }
-input:focus{
-    border-color: rgb(4, 174, 253);
 
+input:focus{
+    box-shadow: 3px 8px 7px #0c0c0ca1; 
+    outline: none !important;
+    border:2px solid rgb(38, 127, 243);
+
+}
+input:valid{
+    border-color: rgb(0, 165, 0);
 }
 
 fieldset{
@@ -95,12 +109,16 @@ fieldset{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
-    /*
-    justify-content: space-around;
-    
-    align-items: center;
-    justify-items: center;
-    */
     border: none;
+}
+
+button{
+    background-color: orange;
+    font-size: 15px; 
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+   
+
+
 }
